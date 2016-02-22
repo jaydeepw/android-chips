@@ -33,8 +33,7 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        final RecipientEditTextView phoneRetv =
-                (RecipientEditTextView) findViewById(R.id.phone_retv);
+        final RecipientEditTextView phoneRetv = (RecipientEditTextView) findViewById(R.id.phone_retv);
         phoneRetv.setTokenizer(new MultiAutoCompleteTextView.CommaTokenizer());
         BaseRecipientAdapter adapter = new BaseRecipientAdapter(BaseRecipientAdapter.QUERY_TYPE_PHONE, this);
         adapter.setShowMobileOnly(true);
